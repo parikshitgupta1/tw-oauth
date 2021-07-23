@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 // https://developer.twitter.com/en/apps/
 import dotenv from "dotenv";
-import oAuthV1Headers from "../src/index";
+import oAuthV1Request from "../src/index";
 import { BaseOAuthOptions } from "../src/types";
 import axios from "axios";
 
@@ -13,12 +13,11 @@ const oAuthOptions: BaseOAuthOptions = {
   access_token: process.env.TWITTER_ACCESS_TOKEN || "",
   access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET || "",
 };
-
 const baseURL = "https://api.twitter.com/1.1/search/tweets.json";
 const method = "GET";
 const params = { q: "twitter bot" };
 
-const searchRequest = oAuthV1Headers({
+const searchRequest = oAuthV1Request({
   oAuthOptions,
   method,
   baseURL,
