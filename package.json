@@ -2,7 +2,7 @@
   "name": "twitter-v1-oauth",
   "version": "1.0.0",
   "description": "OAuth authorization header for Twitter API",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "eslint src",  
     "test": "jest --coverage",
@@ -16,6 +16,9 @@
     "api",
     "oauth",
     "authorization"
+  ],
+  "files": [
+    "lib"
   ],
   "author": "Parikshit Gupta <parikshitvmgupta@gmail.com> (https://parikshitgupta.in)",
   "devDependencies": {
