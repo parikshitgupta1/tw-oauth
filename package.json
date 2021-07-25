@@ -1,5 +1,5 @@
 {
-  "name": "twitter-v1-oauth",
+  "name": "tw-oauth",
   "version": "1.0.0",
   "description": "OAuth authorization header for Twitter API",
   "main": "lib/index.js",
